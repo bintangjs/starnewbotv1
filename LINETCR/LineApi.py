@@ -42,9 +42,9 @@ class LINE:
     self.authToken = self.Talk.authToken
     self.cert = self.Talk.cert
     self._headers = {
-              'X-Line-Application': 'CHROMEOS\t.1.4.5\tChrome_HP\t1',#'DESKTOPMAC 10.10.2-YOSEMITE-x64    MAC 4.5.0', 
+              'X-Line-Application': 'DESKTOPMAC 10.10.2-YOSEMITE-x64 MAC 4.5.0', 
               'X-Line-Access': self.authToken, 
-              'User-Agent': 'Line/7.18.0'#'Line/7.18.0 AppleWebKit/534.30'#'Line/6.0.0 iPad4,1 9.0.2'#'Line/7.18.0 iPad4,1 9.0.2'
+              'User-Agent': 'Line/8.0.1 iPad4,1 9.0.2'
    }
     self.Poll = Poll(self.authToken)
     self.channel = channel.Channel(self.authToken)
@@ -443,5 +443,5 @@ class LINE:
       print("╔Mid Kamu -> " + prof.mid)
       print("╠❂➣❂➣ Nama Akun -> " + prof.displayName)
       print("╠❂➣❂➣ AuthToken Kamu -> " + self.authToken)
-      print("╠❂➣❂➣ Cert Kamu -> " + self.cert if self.cert is not None else "╠═line://ti/p/~jkp4678")
+      print("╠❂➣❂➣ Cert Kamu -> " + self.cert if self.cert is not None else "╠═line://ti/p/~bintanga2")
       print("════Babang-Adhi═══════")
